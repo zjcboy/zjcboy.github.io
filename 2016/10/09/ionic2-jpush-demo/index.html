@@ -3,21 +3,36 @@
 <head>
     <meta charset="utf-8">
     
-    <title>Hello World | JCBoy Blog</title>
+    <title>基于IONIC2极光推送示例 | JCBoy Blog</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick">
+    <meta name="description" content="前言由于ionic2在使用cordova插件的方法不同于之前，
+所以在ionic-native开源项目集成了JPush调用方法，其实实现方式有很多种。
+实际上ionic-natvie只是中间层，可以理解为ionic2与cordova的一个桥梁。
+具体大家可以查看ionic-natvie，文档内有关于插件集成的方法。
+由于工作比较繁忙，暂时只实现了公共API部分。
+项目地址&amp;gt;&amp;gt;
+集成步骤">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://zjcboy.com/2017/01/08/hello-world/index.html">
+<meta property="og:title" content="基于IONIC2极光推送示例">
+<meta property="og:url" content="http://zjcboy.com/2016/10/09/ionic2-jpush-demo/index.html">
 <meta property="og:site_name" content="JCBoy Blog">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick">
-<meta property="og:updated_time" content="2017-01-08T05:46:43.000Z">
+<meta property="og:description" content="前言由于ionic2在使用cordova插件的方法不同于之前，
+所以在ionic-native开源项目集成了JPush调用方法，其实实现方式有很多种。
+实际上ionic-natvie只是中间层，可以理解为ionic2与cordova的一个桥梁。
+具体大家可以查看ionic-natvie，文档内有关于插件集成的方法。
+由于工作比较繁忙，暂时只实现了公共API部分。
+项目地址&amp;gt;&amp;gt;
+集成步骤">
+<meta property="og:updated_time" content="2017-01-08T12:49:32.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick">
+<meta name="twitter:title" content="基于IONIC2极光推送示例">
+<meta name="twitter:description" content="前言由于ionic2在使用cordova插件的方法不同于之前，
+所以在ionic-native开源项目集成了JPush调用方法，其实实现方式有很多种。
+实际上ionic-natvie只是中间层，可以理解为ionic2与cordova的一个桥梁。
+具体大家可以查看ionic-natvie，文档内有关于插件集成的方法。
+由于工作比较繁忙，暂时只实现了公共API部分。
+项目地址&amp;gt;&amp;gt;
+集成步骤">
     
 
     
@@ -164,7 +179,7 @@ Quick">
                 <span>post</span>
             </div>
             <div class="article-info-block">
-                0
+                1
                 <span>tag</span>
             </div>
         </div>
@@ -212,7 +227,7 @@ Quick">
 </aside>
 
             
-            <section id="main"><article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
+            <section id="main"><article id="post-ionic2-jpush-demo" class="article article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
         
@@ -220,7 +235,7 @@ Quick">
                 
     
         <h1 class="article-title" itemprop="name">
-            Hello World
+            基于IONIC2极光推送示例
         </h1>
     
 
@@ -229,14 +244,19 @@ Quick">
                         
     <div class="article-date">
         <i class="fa fa-calendar"></i>
-        <a href="/2017/01/08/hello-world/">
-            <time datetime="2017-01-08T05:46:43.000Z" itemprop="datePublished">2017-01-08</time>
+        <a href="/2016/10/09/ionic2-jpush-demo/">
+            <time datetime="2016-10-09T12:36:03.000Z" itemprop="datePublished">2016-10-09</time>
         </a>
     </div>
 
 
                         
                         
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/IONIC/">IONIC</a>
+    </div>
+
                     </div>
                 
             </header>
@@ -245,15 +265,26 @@ Quick">
         <div class="article-entry" itemprop="articleBody">
         
             
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+            <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>由于ionic2在使用cordova插件的方法不同于之前，</p>
+<p>所以在ionic-native开源项目集成了JPush调用方法，其实实现方式有很多种。</p>
+<p>实际上ionic-natvie只是中间层，可以理解为ionic2与cordova的一个桥梁。</p>
+<p>具体大家可以查看<a href="https://github.com/driftyco/ionic-native" target="_blank" rel="external">ionic-natvie</a>，文档内有关于插件集成的方法。</p>
+<p>由于工作比较繁忙，暂时只实现了<a href="https://github.com/jpush/jpush-phonegap-plugin/blob/master/doc/Common_detail_api.md" target="_blank" rel="external">公共API</a>部分。</p>
+<p><a href="https://github.com/zjcboy/ionic2-jpush-demo" target="_blank" rel="external">项目地址&gt;&gt;</a></p>
+<h3 id="集成步骤"><a href="#集成步骤" class="headerlink" title="集成步骤"></a>集成步骤</h3><p>通过 Cordova Plugins 安装，要求 Cordova CLI 5.0+：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ cordova plugin add jpush-phonegap-plugin --variable API_KEY=your_jpush_appkey</div></pre></td></tr></table></figure></p>
+<p>或者直接通过 url 安装：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ cordova plugin add https://github.com/jpush/jpush-phonegap-plugin.git --variable API_KEY=your_jpush_appkey</div></pre></td></tr></table></figure></p>
+<p>或下载到本地安装：</p>
+<p>$ cordova plugin add Your_Plugin_Path –variable API_KEY=your_jpush_appkey<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">查看更多: [官方文档](https://github.com/jpush/jpush-phonegap-plugin)</div><div class="line"></div><div class="line"></div><div class="line">### 使用（仅列举常用部分，其他方法请查看文档）</div><div class="line"></div><div class="line">请先把demo里的node-module/ionic-native文件夹复制到自己的项目里面去。</div><div class="line"></div><div class="line">引入JPush</div></pre></td></tr></table></figure></p>
+<p>import { JPush } from ‘ionic-native’;<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">初始化</div></pre></td></tr></table></figure></p>
+<p>JPush.init().then(res =&gt; { alert(res) });<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">停止</div></pre></td></tr></table></figure></p>
+<p>JPush.stop().then(res =&gt; { alert(res) });<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">设置别名</div></pre></td></tr></table></figure></p>
+<p>JPush.setAlias(alias).then(res =&gt; { alert(res) });<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">设置标签</div></pre></td></tr></table></figure></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">同时设置别名和标签</div></pre></td></tr></table></figure>
+<p>JPush.setTagsWithAlias(alias,alias).then(res =&gt; { alert(res) });<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">获取注册ID</div></pre></td></tr></table></figure></p>
+<p>JPush.getRegistrationID().then(res =&gt; { alert(res) });<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">获取点击通知的内容</div></pre></td></tr></table></figure></p>
+<p>document.addEventListener(“jpush.openNotification”, (event?: any) =&gt; {<br>    alert(event.alert)<br>}, false);<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">获取自定义消息</div></pre></td></tr></table></figure></p>
+<p>document.addEventListener(“jpush.receiveMessage”, (event?: any) =&gt; {<br>    alert(event.message)<br>}, false);<br>```</p>
+<p>##欢迎大家加入Ionic2.0 交流群 513752928</p>
 
         
         </div>
@@ -264,7 +295,7 @@ Quick">
 
 </div>
 
-    <a data-url="http://zjcboy.com/2017/01/08/hello-world/" data-id="cixon1sxs0000gfh72bs71laf" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://zjcboy.com/2016/10/09/ionic2-jpush-demo/" data-id="cixonq2pn00008mh7aehukqtk" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -332,7 +363,7 @@ Quick">
 
             
     
-        <a href="http://zjcboy.com/2017/01/08/hello-world/#comments" class="article-comment-link ds-thread-count" data-thread-key="http://zjcboy.com/2017/01/08/hello-world/">Comments</a>
+        <a href="http://zjcboy.com/2016/10/09/ionic2-jpush-demo/#comments" class="article-comment-link ds-thread-count" data-thread-key="http://zjcboy.com/2016/10/09/ionic2-jpush-demo/">Comments</a>
     
 
         </footer>
@@ -348,7 +379,7 @@ Quick">
     <section id="comments">
     
         
-    <div class="ds-thread" data-thread-key="2017/01/08/hello-world/" data-title="Hello World" data-url="http://zjcboy.com/2017/01/08/hello-world/"></div>
+    <div class="ds-thread" data-thread-key="2016/10/09/ionic2-jpush-demo/" data-title="基于IONIC2极光推送示例" data-url="http://zjcboy.com/2016/10/09/ionic2-jpush-demo/"></div>
     <style>
         #ds-thread #ds-reset .ds-textarea-wrapper {
             background: none;
@@ -403,7 +434,7 @@ Quick">
                     <li>
                         
                         <div class="item-thumbnail">
-                            <a href="/2017/01/08/hello-world/" class="thumbnail">
+                            <a href="/2016/10/09/ionic2-jpush-demo/" class="thumbnail">
     
     
         <span class="thumbnail-image thumbnail-none"></span>
@@ -414,8 +445,8 @@ Quick">
                         
                         <div class="item-inner">
                             <p class="item-category"></p>
-                            <p class="item-title"><a href="/2017/01/08/hello-world/" class="title">Hello World</a></p>
-                            <p class="item-date"><time datetime="2017-01-08T05:46:43.000Z" itemprop="datePublished">2017-01-08</time></p>
+                            <p class="item-title"><a href="/2016/10/09/ionic2-jpush-demo/" class="title">基于IONIC2极光推送示例</a></p>
+                            <p class="item-date"><time datetime="2016-10-09T12:36:03.000Z" itemprop="datePublished">2016-10-09</time></p>
                         </div>
                     </li>
                 
@@ -430,14 +461,28 @@ Quick">
     <div class="widget-wrap">
         <h3 class="widget-title">archives</h3>
         <div class="widget">
-            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/01/">January 2017</a><span class="archive-list-count">1</span></li></ul>
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/10/">October 2016</a><span class="archive-list-count">1</span></li></ul>
         </div>
     </div>
 
     
         
+    <div class="widget-wrap">
+        <h3 class="widget-title">tags</h3>
+        <div class="widget">
+            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/IONIC/">IONIC</a><span class="tag-list-count">1</span></li></ul>
+        </div>
+    </div>
+
     
         
+    <div class="widget-wrap">
+        <h3 class="widget-title">tag cloud</h3>
+        <div class="widget tagcloud">
+            <a href="/tags/IONIC/" style="font-size: 10px;">IONIC</a>
+        </div>
+    </div>
+
     
         
     <div class="widget-wrap widget-list">
@@ -466,7 +511,7 @@ Quick">
         
     
     <script type="text/javascript">
-    var duoshuoQuery = {short_name:'jcboy# enter duoshuo shortname here'};
+    var duoshuoQuery = {short_name:'jcboy'};
     (function() {
     var ds = document.createElement('script');
     ds.type = 'text/javascript';ds.async = true;

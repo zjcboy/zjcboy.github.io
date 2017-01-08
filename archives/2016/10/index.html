@@ -3,12 +3,12 @@
 <head>
     <meta charset="utf-8">
     
-    <title>JCBoy Blog</title>
+    <title>Archive: 2016/10 | JCBoy Blog</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <meta name="description" content="专注WEB开发">
 <meta property="og:type" content="website">
 <meta property="og:title" content="JCBoy Blog">
-<meta property="og:url" content="http://zjcboy.com/index.html">
+<meta property="og:url" content="http://zjcboy.com/archives/2016/10/index.html">
 <meta property="og:site_name" content="JCBoy Blog">
 <meta property="og:description" content="专注WEB开发">
 <meta name="twitter:card" content="summary">
@@ -208,22 +208,25 @@
 </aside>
 
             
-            <section id="main">
-    <article id="post-ionic2-jpush-demo" class="article article-type-post" itemscope itemprop="blogPost">
-    <div class="article-inner">
+            <section id="main"><div class="timeline timeline-wrap">
+    
+            <div class="timeline-row timeline-row-major">
+                <span class="node"><i class="fa fa-calendar"></i></span>
+                <h1 class="title">2016</h1>
+            </div>
         
-        
-            <header class="article-header">
+        <div class="timeline-row">
+            <span class="node"></span>
+            <div class="content">
                 
     
         <h1 itemprop="name">
-            <a class="article-title" href="/2016/10/09/ionic2-jpush-demo/">基于IONIC2极光推送示例</a>
+            <a class="timeline-article-title" href="/2016/10/09/ionic2-jpush-demo/">基于IONIC2极光推送示例</a>
         </h1>
     
 
-                
-                    <div class="article-meta">
-                        
+                <div class="article-meta">
+                    
     <div class="article-date">
         <i class="fa fa-calendar"></i>
         <a href="/2016/10/09/ionic2-jpush-demo/">
@@ -232,128 +235,18 @@
     </div>
 
 
-                        
-                        
+                    
+                    
     <div class="article-tag">
         <i class="fa fa-tag"></i>
         <a class="tag-link" href="/tags/IONIC/">IONIC</a>
     </div>
 
-                    </div>
-                
-            </header>
-        
-        
-        <div class="article-entry" itemprop="articleBody">
-        
-            
-            <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>由于ionic2在使用cordova插件的方法不同于之前，</p>
-<p>所以在ionic-native开源项目集成了JPush调用方法，其实实现方式有很多种。</p>
-<p>实际上ionic-natvie只是中间层，可以理解为ionic2与cordova的一个桥梁。</p>
-<p>具体大家可以查看<a href="https://github.com/driftyco/ionic-native" target="_blank" rel="external">ionic-natvie</a>，文档内有关于插件集成的方法。</p>
-<p>由于工作比较繁忙，暂时只实现了<a href="https://github.com/jpush/jpush-phonegap-plugin/blob/master/doc/Common_detail_api.md" target="_blank" rel="external">公共API</a>部分。</p>
-<p><a href="https://github.com/zjcboy/ionic2-jpush-demo" target="_blank" rel="external">项目地址&gt;&gt;</a></p>
-<h3 id="集成步骤"><a href="#集成步骤" class="headerlink" title="集成步骤"></a>集成步骤</h3><p>通过 Cordova Plugins 安装，要求 Cordova CLI 5.0+：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ cordova plugin add jpush-phonegap-plugin --variable API_KEY=your_jpush_appkey</div></pre></td></tr></table></figure></p>
-<p>或者直接通过 url 安装：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ cordova plugin add https://github.com/jpush/jpush-phonegap-plugin.git --variable API_KEY=your_jpush_appkey</div></pre></td></tr></table></figure></p>
-<p>或下载到本地安装：</p>
-<p>$ cordova plugin add Your_Plugin_Path –variable API_KEY=your_jpush_appkey<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">查看更多: [官方文档](https://github.com/jpush/jpush-phonegap-plugin)</div><div class="line"></div><div class="line"></div><div class="line">### 使用（仅列举常用部分，其他方法请查看文档）</div><div class="line"></div><div class="line">请先把demo里的node-module/ionic-native文件夹复制到自己的项目里面去。</div><div class="line"></div><div class="line">引入JPush</div></pre></td></tr></table></figure></p>
-<p>import { JPush } from ‘ionic-native’;<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">初始化</div></pre></td></tr></table></figure></p>
-<p>JPush.init().then(res =&gt; { alert(res) });<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">停止</div></pre></td></tr></table></figure></p>
-<p>JPush.stop().then(res =&gt; { alert(res) });<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">设置别名</div></pre></td></tr></table></figure></p>
-<p>JPush.setAlias(alias).then(res =&gt; { alert(res) });<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">设置标签</div></pre></td></tr></table></figure></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">同时设置别名和标签</div></pre></td></tr></table></figure>
-<p>JPush.setTagsWithAlias(alias,alias).then(res =&gt; { alert(res) });<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">获取注册ID</div></pre></td></tr></table></figure></p>
-<p>JPush.getRegistrationID().then(res =&gt; { alert(res) });<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">获取点击通知的内容</div></pre></td></tr></table></figure></p>
-<p>document.addEventListener(“jpush.openNotification”, (event?: any) =&gt; {<br>    alert(event.alert)<br>}, false);<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">获取自定义消息</div></pre></td></tr></table></figure></p>
-<p>document.addEventListener(“jpush.receiveMessage”, (event?: any) =&gt; {<br>    alert(event.message)<br>}, false);<br>```</p>
-<p>##欢迎大家加入Ionic2.0 交流群 513752928</p>
-
-        
+                </div>
+            </div>
         </div>
-        <footer class="article-footer">
-            <div class="share-container">
-
-
-
+    
 </div>
-
-    <a data-url="http://zjcboy.com/2016/10/09/ionic2-jpush-demo/" data-id="cixonq2pn00008mh7aehukqtk" class="article-share-link"><i class="fa fa-share"></i>Share</a>
-<script>
-    (function ($) {
-        // Prevent duplicate binding
-        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
-            __SHARE_BUTTON_BINDED__ = true;
-        } else {
-            return;
-        }
-        $('body').on('click', function() {
-            $('.article-share-box.on').removeClass('on');
-        }).on('click', '.article-share-link', function(e) {
-            e.stopPropagation();
-
-            var $this = $(this),
-                url = $this.attr('data-url'),
-                encodedUrl = encodeURIComponent(url),
-                id = 'article-share-box-' + $this.attr('data-id'),
-                offset = $this.offset(),
-                box;
-
-            if ($('#' + id).length) {
-                box = $('#' + id);
-
-                if (box.hasClass('on')){
-                    box.removeClass('on');
-                    return;
-                }
-            } else {
-                var html = [
-                    '<div id="' + id + '" class="article-share-box">',
-                        '<input class="article-share-input" value="' + url + '">',
-                        '<div class="article-share-links">',
-                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
-                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
-                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
-                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
-                        '</div>',
-                    '</div>'
-                ].join('');
-
-              box = $(html);
-
-              $('body').append(box);
-            }
-
-            $('.article-share-box.on').hide();
-
-            box.css({
-                top: offset.top + 25,
-                left: offset.left
-            }).addClass('on');
-
-        }).on('click', '.article-share-box', function (e) {
-            e.stopPropagation();
-        }).on('click', '.article-share-box-input', function () {
-            $(this).select();
-        }).on('click', '.article-share-box-link', function (e) {
-            e.preventDefault();
-            e.stopPropagation();
-
-            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
-        });
-    })(jQuery);
-</script>
-
-            
-    
-        <a href="http://zjcboy.com/2016/10/09/ionic2-jpush-demo/#comments" class="article-comment-link ds-thread-count" data-thread-key="http://zjcboy.com/2016/10/09/ionic2-jpush-demo/">Comments</a>
-    
-
-        </footer>
-    </div>
-    
-</article>
-
-
 </section>
             
                 <aside id="sidebar">
